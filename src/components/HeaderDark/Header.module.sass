@@ -25,6 +25,7 @@
 .button-stroke
     width: 20%
 
+
 .buttonheader  
     width: 20%
     margin-left: 3%
@@ -32,10 +33,7 @@
     box-shadow: 0 0 0 2px #e6e8ec inset;
     color: #23262F;
 
-.button
-    background: #22293B
-    color: #777E90
-    
+
 .wrap
     display: flex
     align-items: center
@@ -94,9 +92,7 @@
         max-width: calc(100% + 64px)
         margin: 0 -32px auto
 
-.link
-    hover: white
-
+.link,
 .group,
 .nav > div
     &:not(:last-child)
@@ -112,7 +108,7 @@
     display: block
     padding: 16px 8px
     +button-2
-    color: $neutrals4
+    color: #777E90
     transition: color .2s
     +d
         padding: 0
@@ -129,7 +125,7 @@
         +dark
             color: $neutrals8
     &.active
-        color: $neutrals2
+        color: white
         +m
             box-shadow: inset 2px 0 0 0 $red
         +dark

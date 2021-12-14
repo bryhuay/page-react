@@ -29,6 +29,15 @@ function App() {
         />
         <Route
           exact
+          path="/quiero-viviendas"
+          render={() => (
+            <Page>
+              <Home />
+            </Page>
+          )}
+        />
+        <Route
+          exact
           path="/dark"
           render={() => (
             <PageDark>
@@ -45,87 +54,7 @@ function App() {
             </PageDark>
           )}
         />
-        <Route
-          exact
-          path="/features"
-          render={() => (
-            <Page>
-              <Features />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/pricing"
-          render={() => (
-            <Page>
-              <Pricing />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/download"
-          render={() => (
-            <Page>
-              <Download />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/class01"
-          render={() => (
-            <Page>
-              <Class01 />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/class01-details"
-          render={() => (
-            <Page>
-              <Class01Details />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/class02"
-          render={() => (
-            <Page>
-              <Class02 />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/class02-details"
-          render={() => (
-            <Page>
-              <Class02Details />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/lifestyle"
-          render={() => (
-            <Page>
-              <Lifestyle />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/article"
-          render={() => (
-            <Page>
-              <Article />
-            </Page>
-          )}
-        />
+
       </Switch>
     </Router>
   );

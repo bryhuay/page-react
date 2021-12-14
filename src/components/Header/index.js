@@ -36,6 +36,7 @@ const socials = [
     url: "https://www.linkedin.com/company/bimomx/",
   },
   
+  
 ];
 
 const contact = [

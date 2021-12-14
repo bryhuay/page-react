@@ -11,11 +11,11 @@ import Theme from "../Theme";
 const navLinks = [
   {
     title: "Quiero viviendas",
-    url: "/features",
+    url: "/quiero-viviendas",
   },
   {
     title: "Quiero inquilinos",
-    url: "/pricing",
+    url: "/quiero-inquilinos",
   },
 ];
 
@@ -36,6 +36,7 @@ const socials = [
     url: "https://www.linkedin.com/company/bimomx/",
   },
   
+  
 ];
 
 const contact = [
@@ -53,7 +54,7 @@ const contact = [
   },
 ];
 
-const HeadersDark = () => {
+const Headers = () => {
   const [visibleNav, setVisibleNav] = useState(false);
 
   return (
@@ -125,8 +126,8 @@ const HeadersDark = () => {
           </div>
         </div>
         <a
-          className={cn("button-stroke-header button", styles.button)}
-          href="https://bimomx.app.link/bimomx"
+          className={cn("button-stroke-header-dark button", styles.button)}
+           href="https://bimomx.app.link/bimomx"
         >
           Descarga el app
         </a>
@@ -140,5 +141,4 @@ const HeadersDark = () => {
   );
 };
 
-export default HeadersDark;
-
+export default Headers;
