@@ -1,0 +1,95 @@
+[class^="button"]
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  height: 48px
+  padding: 0 24px
+  +button-1
+  text-align: center
+  color: $neutrals8
+  transition: all .2s
+  background: radial-gradient(52.88% 100% at 49.84% 0%, #FF7A7A 0%, #FF5353 100%)
+  box-shadow: 0px 2px 8px rgba(226, 7, 7, 0.24);
+  border-radius: 14px;
+  &.disabled
+    opacity: .5
+  svg
+    fill: $neutrals8
+  &:not([class^="button-circle"])
+    svg
+      &:last-child
+        margin-left: 15px
+
+.button-stroke
+  background: white
+  box-shadow: 0 0 0 2px $neutrals6 inset
+  color: $neutrals2
+  svg
+    fill: $neutrals2
+    transition: fill .2s
+  &:hover
+    box-shadow: 0 0 0 2px $neutrals2 inset
+    background: $neutrals2
+    color: $neutrals8
+    svg
+      fill: $neutrals8
+  +dark-common
+    box-shadow: 0 0 0 2px $neutrals4 inset
+    color: $neutrals8
+    svg
+      fill: $neutrals8
+    &:hover
+      box-shadow: 0 0 0 2px $neutrals8 inset
+      background: none
+
+.button-stroke-header
+  width: 40%
+  margin-left: 3%
+  background: white
+  box-shadow: 0 0 0 2px $neutrals6 inset
+  color: $neutrals2
+  svg
+    fill: $neutrals2
+    transition: fill .2s
+  &:hover
+    box-shadow: 0 0 0 2px $neutrals2 inset
+    svg
+      fill: $neutrals8
+  +dark-common
+    box-shadow: 0 0 0 2px $neutrals4 inset
+    color: $neutrals8
+    svg
+      fill: $neutrals8
+    &:hover
+      box-shadow: 0 0 0 2px $neutrals8 inset
+      background: none
+
+.button-small
+  height: 40px
+  border-radius: 20px
+  padding: 0 16px
+  font-size: 14px
+
+.button-circle-stroke
+  flex: 0 0 48px
+  width: 48px
+  height: 48px
+  padding: 0
+  border-radius: 50%
+  box-shadow: 0 0 0 2px $neutrals6 inset
+  background: transparent
+  transition: border-color .2s
+  svg
+      fill: $neutrals4
+      transition: fill .2s
+  &:hover
+      box-shadow: 0 0 0 2px $neutrals2 inset
+      svg
+          fill: $neutrals8
+  +dark-common
+    box-shadow: 0 0 0 2px $neutrals3 inset
+    &:hover
+      background: $neutrals3
+
+
+
