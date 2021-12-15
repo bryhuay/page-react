@@ -68,7 +68,7 @@ const Headers = () => {
           <Image
             className={styles.pic}
             src="/images/logo-bimo-dark.png"
-            srcDark="/images/logo-bimo-white.png"
+            srcDark="/images/logo-bimo-dark.png"
             alt="Bimo"
           />
         </Link>
@@ -96,14 +96,6 @@ const Headers = () => {
             )}
           </nav>
           <div className={styles.details}>
-            <div className={styles.contact}>
-              {contact.map((x, index) => (
-                <div className={styles.element} key={index}>
-                  <div className={styles.category}>{x.title}</div>
-                  <div className={styles.text}>{x.content}</div>
-                </div>
-              ))}
-            </div>
             <div className={styles.socials}>
               {socials.map((x, index) => (
                 <a
@@ -117,12 +109,12 @@ const Headers = () => {
                 </a>
               ))}
             </div>
-            <Link
-              className={cn("button-stroke button-small", styles.button)}
-              to="/"
+            <a
+              className={cn("button-stroke", styles.button)}
+              href="https://bimomx.app.link/bimomx"
             >
-              Get free trial
-            </Link>
+               Descarga el app
+            </a>
           </div>
         </div>
         <a

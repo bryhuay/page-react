@@ -20,9 +20,15 @@
       &:last-child
         margin-left: 15px
 
+.button-contact
+    &:hover
+        background: radial-gradient(280.94% 160.42% at 49.84% 0%, #FF8E8E 0%, #FF5353 100%);
+        box-shadow: 0px 2px 8px rgba(226, 7, 7, 0.24);
+        border-radius: 14px;
+
 .button-stroke
   background: white
-  box-shadow: 0 0 0 2px $neutrals6 inset
+  box-shadow: 0 0 0 2px #e6e8ec inset
   color: $neutrals2
   svg
     fill: $neutrals2
@@ -34,13 +40,16 @@
     svg
       fill: $neutrals8
   +dark-common
-    box-shadow: 0 0 0 2px $neutrals4 inset
-    color: $neutrals8
+    box-shadow: 0 0 0 2px #e6e8ec inset
+    color: $neutrals2
     svg
       fill: $neutrals8
     &:hover
-      box-shadow: 0 0 0 2px $neutrals8 inset
-      background: none
+      box-shadow: 0 0 0 2px $neutrals2 inset
+      background: #F5F5F5 
+      color: $neutrals8
+      svg
+        fill: $neutrals8
 
 .button-stroke-header
   width: 19%
@@ -57,12 +66,13 @@
       fill: $neutrals8
   +dark-common
     box-shadow: 0 0 0 2px $neutrals4 inset
-    color: $neutrals8
+    color: #23262F
     svg
       fill: $neutrals8
     &:hover
-      box-shadow: 0 0 0 2px $neutrals8 inset
-      background: none
+      box-shadow: 0 0 0 2px $neutrals2 inset
+      svg
+        fill: $neutrals8
 
 .button-stroke-header-dark
   width: 19%
@@ -71,20 +81,20 @@
   color: #777E90
   box-shadow: 0 0 0 2px #777E90 inset
   svg
-    fill: $neutrals2
+    fill: $neutrals4
     transition: fill .2s
   &:hover
-    box-shadow: 0 0 0 2px white inset
-    color: white
-    svg
-      fill: white
-  +dark-common
     box-shadow: 0 0 0 2px $neutrals4 inset
+    color: $neutrals4
+    svg
+      fill: $neutrals4
+  +dark-common
+    box-shadow: 0 0 0 2px $neutrals8 inset
     color: $neutrals8
     svg
       fill: $neutrals8
     &:hover
-      box-shadow: 0 0 0 2px $neutrals8 inset
+      box-shadow: 0 0 0 2px $neutrals4 inset
       background: none
 
 .button-small

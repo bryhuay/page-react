@@ -15,8 +15,10 @@
             display: none
 
 .logo
+    width: 22%;
     margin-right: 48px
     +d
+        width: 100%;
         margin-right: auto
 .pic
     width: 40%
@@ -63,7 +65,7 @@
     +dark
         border-color: $neutrals3
         +d
-            background: $neutrals1
+            background: $neutrals8
     .button
         display: none
         +m
@@ -121,13 +123,13 @@
     &:hover
         color: $neutrals2
         +dark
-            color: $neutrals8
+            color: $neutrals2
     &.active
         color: $neutrals2
         +m
             box-shadow: inset 2px 0 0 0 $red
         +dark
-            color: $neutrals8
+            color: $neutrals2
     
 .details
     display: flex
@@ -186,7 +188,7 @@
     &:hover svg
         fill: $neutrals2
         +dark
-            fill: $neutrals8
+            fill: $neutrals2
     &:not(:last-child)
         margin-right: 24px
 

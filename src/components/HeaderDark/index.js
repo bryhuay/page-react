@@ -96,14 +96,6 @@ const Headers = () => {
             )}
           </nav>
           <div className={styles.details}>
-            <div className={styles.contact}>
-              {contact.map((x, index) => (
-                <div className={styles.element} key={index}>
-                  <div className={styles.category}>{x.title}</div>
-                  <div className={styles.text}>{x.content}</div>
-                </div>
-              ))}
-            </div>
             <div className={styles.socials}>
               {socials.map((x, index) => (
                 <a
@@ -117,12 +109,12 @@ const Headers = () => {
                 </a>
               ))}
             </div>
-            <Link
+            <a
               className={cn("button-stroke button-small", styles.button)}
-              to="/"
+              href="https://bimomx.app.link/bimomx"
             >
-              Get free trial
-            </Link>
+              Descarga el app
+            </a>
           </div>
         </div>
         <a
